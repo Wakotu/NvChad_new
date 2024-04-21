@@ -34,6 +34,7 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "nvchad.autocmds"
 
+-- mapping loaded after lazy setup
 vim.schedule(function()
   require "mappings"
 end)
