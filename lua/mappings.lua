@@ -21,6 +21,17 @@ map('n', "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 map("i", "kk", "<ESC>", { desc = "exit insert mode"})
 
+-- editing keymappings
+local ls = require("luasnip")
+map({"i", "s"}, "<M-j>", function() ls.jump( 1) end, {silent = true})
+map({"i", "s"}, "<M-k>", function() ls.jump(-1) end, {silent = true})
+
+map({"i", "s"}, "<M-l>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, {silent = true})
+
 
 local nomap = vim.keymap.del
 
