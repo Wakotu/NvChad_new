@@ -25,7 +25,4 @@ return {
   	"nvim-treesitter/nvim-treesitter",
     opts = require "configs.treesitter"
   },
-  {
-    "williamboman/mason-lspconfig.nvim",
-  }
 }
