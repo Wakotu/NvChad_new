@@ -2,6 +2,7 @@ local opts = {
   ensure_installed = {
     "lua-language-server",
     "stylua",
+    "luacheck",
     -- bash
     "shellcheck",
     "bash-language-server",
@@ -9,9 +10,11 @@ local opts = {
     -- c++
     "clangd",
     "clang-format",
+    "cpplint",
     -- python
     "pyright",
     "ruff",
+    "isort",
     "mypy",
     "debugpy",
     "black",
@@ -52,7 +55,7 @@ local opts = {
     -- kotlin
     "kotlin-language-server",
     "ktlint",
-  }
+  },
 }
 
 return opts

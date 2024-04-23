@@ -3,8 +3,9 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    c = {"clang-format"},
-    cpp = {"clang-format"},
+    c = { "clang-format" },
+    cpp = { "clang-format" },
+    python = { "isort", "black" },
   },
 
   format_on_save = {
