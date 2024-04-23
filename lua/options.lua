@@ -1,5 +1,7 @@
 require "nvchad.options"
 
+-- extra configs
+pcall(require, "wsl_config")
 -- add yours here!
 
 -- local o = vim.o
