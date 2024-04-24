@@ -9,6 +9,7 @@ local options = {
     c = { "clang-format" },
     cpp = { "clang-format" },
     python = { "isort", "black" },
+    markdown = { "markdownlint" },
   },
 
   ["format_on_save"] = function(bufnr)

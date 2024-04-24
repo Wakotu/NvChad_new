@@ -4,6 +4,7 @@ local servers = {
   html = {},
   awk_ls = {},
   bashls = {},
+  grammarly = {},
 
   clangd = {
     cmd = {

@@ -25,6 +25,8 @@ local opts = {
     "prettier",
     "typescript-language-server",
     -- markdown
+    "grammarly-languageserver",
+    "vale",
     "markdownlint",
     -- yaml
     "yaml-language-server",
